@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rohit Kumar – Game Developer</title>
-<meta name="description" content="Rohit Kumar is a beginner game developer building games in Unity and C#, and making pixel art in Aseprite.">
+<title>Rohit Kumar – Gameplay Programmer</title>
+<meta name="description" content="Rohit Kumar is a self-taught gameplay programmer working in Unity and C#, with game programming internship experience.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +71,12 @@ dl { margin: 0; display: grid; grid-template-columns: 9rem 1fr; gap: 1.25rem 2re
 dt { font: 700 1.25rem var(--display); color: var(--orange); }
 dd { margin: 0; }
 
+.jobs ul { padding-left: 1.25rem; margin: 0; max-width: 42rem; }
+.jobs li { margin-bottom: 0.6rem; padding-left: 0.25rem; }
+.jobs li::marker { color: var(--orange); }
+.job + .job { margin-top: 2.5rem; }
+.next { margin-top: 3.5rem; padding-top: 3rem; border-top: 3px solid var(--line); }
+.edu p { margin: 0 0 1rem; }
 .contact a { font-weight: 500; }
 .contact p { margin: 0 0 0.5rem; }
 footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-top: 3px solid var(--line); }
@@ -87,18 +93,20 @@ footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-t
 <div class="wrap">
   <nav aria-label="Main">
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header class="hero">
     <div>
       <h1>Rohit Kumar</h1>
-      <p class="role">Game developer</p>
-      <p class="lede">I build games in Unity with C# and make my own pixel art. I’m looking for an internship, a junior game developer or programmer role, or a startup where I can grow with a team.</p>
+      <p class="role">Gameplay programmer</p>
+      <p class="lede">I’m a self-taught gameplay programmer who builds games in Unity with C#. I’ve interned as a game programmer and I’m looking for a junior role, another internship, or a startup where I can grow with a team.</p>
       <div class="btns">
-        <a class="btn solid" href="#projects">See my project</a>
+        <a class="btn solid" href="#projects">See my projects</a>
         <a class="btn" href="https://oldpixels.itch.io/">Play my games on itch.io</a>
       </div>
     </div>
@@ -115,7 +123,32 @@ footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-t
 <section id="about">
   <div class="wrap two">
     <h2>About</h2>
-    <p class="prose">I’m a beginner game developer. I code gameplay in Unity with C#, and I make game assets in Aseprite and Photoshop. I’m still learning, and I build small projects to practice new ideas. My latest one is a 3D cooking game, and its source code is public on GitHub.</p>
+    <p class="prose">Hi, I’m Rohit. I’m a self-taught gameplay programmer with a passion for solving problems and creating games that feel great to play. I focus on clean, readable code and keep learning new tools, systems and development practices.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap two">
+    <h2>Experience</h2>
+    <div class="jobs">
+      <article class="job">
+        <h3>Game Programmer (intern)</h3>
+        <p class="meta">Arteon Interactive · 17 July 2026 – 17 Aug 2026</p>
+        <ul>
+          <li>Programmed robust arcade-style vehicle physics, with responsive acceleration, steering and collision mechanics.</li>
+          <li>Worked with designers and artists to integrate assets and match technical features to the creative vision.</li>
+          <li>Managed version control with Git and GitHub to keep multi-disciplinary work smooth and the project stable.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3>Game Creator (intern)</h3>
+        <p class="meta">Eklavya.me · 21 Nov 2025 – 01 Jan 2026</p>
+        <ul>
+          <li>Built interactive educational games for Grades 4 and 5 in several formats, using Eklavya’s no-code Game Creator tool.</li>
+          <li>Designed NCERT-aligned content for Math, Science, English and EVS, with a focus on game-based learning.</li>
+        </ul>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -123,7 +156,7 @@ footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-t
   <div class="wrap project">
     <h2>Projects</h2>
     <h3>Cayo’s Kitchen</h3>
-    <p class="meta">Learning project · 3D cooking game</p>
+    <p class="meta">3D cooking game · In progress</p>
     <ul class="tags" aria-label="Technologies">
       <li>Unity</li><li>C#</li><li>Input System</li><li>ScriptableObjects</li>
     </ul>
@@ -135,7 +168,23 @@ footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-t
       <li>Built an order system that spawns random recipes on a timer and checks delivered plates against them, with the UI updated through C# events.</li>
     </ul>
     <p><a class="btn" href="https://github.com/Rawhyttt/CayosKitchen">View source on GitHub</a></p>
-    <p class="meta">More of my work is on <a href="https://oldpixels.itch.io/">oldpixels.itch.io</a>.</p>
+
+    <div class="next">
+      <h3>Banana Go Brr..!!</h3>
+      <p class="meta">2D prototype · Shovel Jam 2025</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>Unity</li><li>C#</li><li>2D physics</li><li>State machines</li>
+      </ul>
+      <ul>
+        <li>Designed a boss encounter using a state machine architecture.</li>
+        <li>Developed enemy AI behavior patterns.</li>
+        <li>Created a boomerang system based on vector math.</li>
+        <li>Implemented UI menus and game progression.</li>
+        <li>Implemented 2D side-scrolling movement and dash mechanics.</li>
+      </ul>
+      <p><a class="btn" href="https://oldpixels.itch.io/">Find it on itch.io</a></p>
+    </div>
+    <p class="meta" style="margin-top:3rem">More of my work is on <a href="https://oldpixels.itch.io/">oldpixels.itch.io</a>.</p>
   </div>
 </section>
 
@@ -143,13 +192,30 @@ footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-t
   <div class="wrap two">
     <h2>Skills</h2>
     <dl>
-      <dt>Engine</dt>
-      <dd>Unity: ScriptableObjects, Input System, Animator, UI with TextMeshPro, physics raycasts</dd>
-      <dt>Programming</dt>
+      <dt>Language</dt>
       <dd>C#: inheritance, interfaces, events, state machines, singleton pattern</dd>
+      <dt>Engine</dt>
+      <dd>Unity: 2D physics, animation, Animator, UI with TextMeshPro, ScriptableObjects, Input System, physics raycasts</dd>
+      <dt>Gameplay</dt>
+      <dd>State machines, AI behavior, movement systems, vector math, input handling, vehicle physics, prototype iteration</dd>
+      <dt>Tools</dt>
+      <dd>Visual Studio Code, Git and GitHub</dd>
       <dt>Art and assets</dt>
       <dd>Aseprite, Photoshop</dd>
+      <dt>Working style</dt>
+      <dd>Problem-solving and self-learning</dd>
     </dl>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap two edu">
+    <h2>Education</h2>
+    <div>
+      <p><strong>B.A. Programme, Political Science</strong><br>Delhi University · 2026–2028</p>
+      <p><strong>Class 12</strong><br>Kendriya Vidyalaya · 2025</p>
+      <p><strong>Class 10</strong><br>Kendriya Vidyalaya · 2023</p>
+    </div>
   </div>
 </section>
 
